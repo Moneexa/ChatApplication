@@ -17,6 +17,7 @@ export default function Contents() {
     return (
         <Layout>
             {
+                
                 user.loggedIn &&
                 <Sider>
                     <div className="d-flex flex-column text-center text-white">

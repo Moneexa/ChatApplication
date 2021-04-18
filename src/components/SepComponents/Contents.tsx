@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect} from 'react'
+import { useState, useLayoutEffect } from 'react'
 import Chat from './Chat/Chat'
 import Login from './Login/Login'
 import { Route, Switch, Redirect } from 'react-router-dom'
@@ -17,17 +17,17 @@ export default function Contents() {
     return (
         <Layout>
             {
-                user.loggedIn &&  
-                    <Sider>
-                        <div className="d-flex flex-column text-center text-white">
-                            {
-                                user.users.map(value=>{
-                                    <div>{value.userName}</div>
-                                })
-                            }
-                            <div>User</div>
-                        </div>
-                    </Sider>
+                user.loggedIn &&
+                <Sider>
+                    <div className="d-flex flex-column text-center text-white">
+                        {
+                            user.users.map(value => {
+                                <div>{value.userName}</div>
+                            })
+                        }
+                        <div>User</div>
+                    </div>
+                </Sider>
             }
 
             <Content>
